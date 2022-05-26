@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Link as Nextlink } from 'next/link'
-import { Box, Container, Flex, Heading, IconButton, Link, Spacer, useMediaQuery, Menu, MenuButton, MenuList } from '@chakra-ui/react'
+import { Box, Container, Flex, Heading, IconButton, Link, Spacer, useMediaQuery, Menu, MenuButton, MenuList, MenuItem } from '@chakra-ui/react'
 import { PhoneIcon, AddIcon, WarningIcon } from '@chakra-ui/icons'
 import { useColorMode } from "@chakra-ui/color-mode";
-import { FaPaw, FaSun, FaMoon, FaInfoCircle, FaTelegramPlane, FaCannabis, FaGithub } from 'react-icons/fa'
+import { FaPaw, FaSun, FaMoon, FaInfoCircle, FaTelegramPlane, FaCannabis, FaGithub, FaGripLines } from 'react-icons/fa'
 import { VscGithub } from 'react-icons/vsc'
 import { AiFillMessage } from 'react-icons/ai'
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <Box bg="black">
-        <Flex w="100%" pl="8" pr="8" pb="3">
+        <Flex w="100%" pl="5" pr="5" pb="3">
           <IconButton variant="link" isRound='true' mt="3.5" size="lg" icon={<FaPaw />} transform=""></IconButton>
           <Heading mt="5" size="sm" cursor="pointer" >
             OVERLORD
