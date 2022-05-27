@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Link as Nextlink } from 'next/link'
 import { Box, Container, Flex, Heading, IconButton, Link, Spacer, useMediaQuery, Menu, MenuButton, MenuList, MenuItem } from '@chakra-ui/react'
 import { PhoneIcon, AddIcon, WarningIcon } from '@chakra-ui/icons'
