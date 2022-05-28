@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import { Link as Nextlink } from 'next/link'
+// import { Link as Nextlink } from 'next/link'
+import Nextlink from 'next/link'
 import { Button, Text, Center, Box, Container, Flex, Heading, IconButton, Link, Spacer, useMediaQuery, Menu, MenuButton, MenuList, MenuItem, useColorModeValue, Image } from '@chakra-ui/react'
-import { PhoneIcon, AddIcon, WarningIcon } from '@chakra-ui/icons'
 import { useColorMode } from "@chakra-ui/color-mode";
 import { FaPaw, FaSun, FaMoon, FaInfoCircle, FaTelegramPlane, FaCannabis, FaGithub, FaGripLines, FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa'
 import { VscGithub } from 'react-icons/vsc'
@@ -27,20 +27,22 @@ export default function Home() {
     <>
       <Head>
         <title>OVERLORD | HOMEPAGE</title>
-        <link rel="apple-touch-icon" href="https://cdn-icons.flaticon.com/png/512/1135/premium/1135729.png?token=exp=1653665482~hmac=53bdc80273655cb686732d46e1786a52" />
+        <link rel="apple-touch-icon" sizes="180x180" href="https://cdn-icons.flaticon.com/png/512/1135/premium/1135729.png?token=exp=1653665482~hmac=53bdc80273655cb686732d46e1786a52" />
         <link rel="shortcut icon" href="https://cdn-icons.flaticon.com/png/512/1135/premium/1135729.png?token=exp=1653665482~hmac=53bdc80273655cb686732d46e1786a52" />
       </Head>
       <Box as="nav" position="fixed" zIndex={1} backdropFilter="auto" backdropBlur="8px" w="100%">
         <Flex w="100%" pl="7" pr="7" pb="3">
           <Link isRound='true' mt="3.5" pr="4" pt="1.5" fontSize="18px" transform="" href='/'><FaPaw /></Link>
-          <Link mt="4" cursor="pointer" fontSize="18.5" fontWeight="extrabold" textDecoration="none" href='/' _hover={{textDecoration:"none"}}>
+          <Link mt="4" cursor="pointer" fontSize="18.5" fontWeight="extrabold" textDecoration="none" href='/' _hover={{ textDecoration: "none" }}>
             OVERLORD
           </Link>
           <div>
             {isLargerThan650 &&
               <p>
                 <Flex>
-                  <Link href='/' mt="4" size="sm" fontSize="lg" ml="7" _hover={{ color: "red.500", textDecoration: "underline", }}>Works</Link>
+                  <Nextlink href="../comp/work" passHref scroll={false}>
+                    <Link mt="4" size="sm" fontSize="lg" ml="7" _hover={{ color: "red.500", textDecoration: "underline", }}>Works</Link>
+                  </Nextlink>
                   <Box pt="21.5px" ml="6" mr="1"><AiFillMessage /></Box>
                   <Link href='/' mt="4" size="sm" fontSize="lg" ml="0" _hover={{ color: "green.500", textDecoration: "underline", }}>Post</Link>
                   <Box pt="21.5px" ml="6" mr="1"><VscGithub /></Box>
