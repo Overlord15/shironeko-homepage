@@ -30,10 +30,10 @@ export default function Home() {
         <link rel="apple-touch-icon" href="https://cdn-icons.flaticon.com/png/512/1135/premium/1135729.png?token=exp=1653665482~hmac=53bdc80273655cb686732d46e1786a52" />
         <link rel="shortcut icon" href="https://cdn-icons.flaticon.com/png/512/1135/premium/1135729.png?token=exp=1653665482~hmac=53bdc80273655cb686732d46e1786a52" />
       </Head>
-      <Box>
-        <Flex w="100%" pl="5" pr="5" pb="3">
-          <Link isRound='true' mt="3.5" pr="4" pt="1.5" fontSize="18px" transform=""><FaPaw /></Link>
-          <Link mt="4" cursor="pointer" fontSize="18.5" fontWeight="extrabold" textDecoration="none">
+      <Box as="nav" position="fixed" zIndex={1} backdropFilter="auto" backdropBlur="8px" w="100%">
+        <Flex w="100%" pl="7" pr="7" pb="3">
+          <Link isRound='true' mt="3.5" pr="4" pt="1.5" fontSize="18px" transform="" href='/'><FaPaw /></Link>
+          <Link mt="4" cursor="pointer" fontSize="18.5" fontWeight="extrabold" textDecoration="none" href='/' _hover={{textDecoration:"none"}}>
             OVERLORD
           </Link>
           <div>
@@ -68,7 +68,7 @@ export default function Home() {
           </div>
         </Flex>
       </Box>
-      <Container pt="45">
+      <Container pt="100">
         <Box border="lg" mb="6" p="3" textAlign="center" borderRadius="8px" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.300')} css={{ backdropFilter: 'blur(10px)' }}>
           Hello, I&apos;m an indie web app developer based in India!
         </Box>
