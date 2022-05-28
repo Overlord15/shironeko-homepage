@@ -32,10 +32,10 @@ export default function Home() {
       </Head>
       <Box>
         <Flex w="100%" pl="5" pr="5" pb="3">
-          <IconButton variant="link" isRound='true' mt="3.5" size="lg" icon={<FaPaw />} transform=""></IconButton>
-          <Heading mt="5" size="sm" cursor="pointer" >
+          <Link isRound='true' mt="3.5" pr="4" pt="1.5" fontSize="18px" transform=""><FaPaw /></Link>
+          <Link mt="4" cursor="pointer" fontSize="18.5" fontWeight="extrabold" textDecoration="none">
             OVERLORD
-          </Heading>
+          </Link>
           <div>
             {isLargerThan650 &&
               <p>
@@ -166,10 +166,9 @@ export default function Home() {
               <Image src='../images/github-source.jpg' alt='github source' objectFit='contain' border="none" borderRadius="10px" maxW="70%" />
             </Center>
           </Link>
-          <Center mt="3" mb=""><Text maxW="60%" textAlign="center" fontWeight="bold">Overlord - Homepage Web app</Text></Center>
+          <Center mt="3" mb=""><Text maxW="60%" textAlign="center" fontWeight="bold">Overlord - Homepage Web App</Text></Center>
           <Center mt="2"><Text textAlign="justify" maxW="60%" fontWeight="100">Visit my Github repositery which contains the source code for this site and feel free to contribute ! If you like my work feel free to give a star.</Text></Center>
         </Box>
-
         <Box maxW="100%" h="30px" pb="10" pt="8" ><Text textAlign="center" fontSize="15px" fontWeight="light">© 2022 Anupam Kumar. All Rights Reserved.</Text></Box>
       </Container>
     </>
