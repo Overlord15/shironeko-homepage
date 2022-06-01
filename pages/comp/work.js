@@ -33,9 +33,11 @@ export default function Home() {
             <Box as="nav" position="fixed" zIndex={1} backdropFilter="auto" backdropBlur="8px" w="100%">
                 <Flex w="100%" pl="7" pr="7" pb="3">
                     <Link isRound='true' mt="3.5" pr="4" pt="1.5" fontSize="18px" transform="" href='/'><FaPaw /></Link>
-                    <Link mt="4" cursor="pointer" fontSize="18.5" fontWeight="extrabold" textDecoration="none" href='/' _hover={{ textDecoration: "none" }}>
-                        OVERLORD
-                    </Link>
+                    <Nextlink href="/" passHref scroll={false}>
+                        <Link mt="4" cursor="pointer" fontSize="18.5" fontWeight="extrabold" textDecoration="none" href='/' _hover={{ textDecoration: "none" }}>
+                            OVERLORD
+                        </Link>
+                    </Nextlink>
                     <div>
                         {isLargerThan650 &&
                             <p>

@@ -33,9 +33,11 @@ export default function Home() {
       <Box as="nav" position="fixed" zIndex={1} backdropFilter="auto" backdropBlur="8px" w="100%">
         <Flex w="100%" pl="7" pr="7" pb="3">
           <Link isRound='true' mt="3.5" pr="4" pt="1.5" fontSize="18px" transform="" href='/'><FaPaw /></Link>
-          <Link mt="4" cursor="pointer" fontSize="18.5" fontWeight="extrabold" textDecoration="none" href='/' _hover={{ textDecoration: "none" }}>
-            OVERLORD
-          </Link>
+          <Nextlink href="/" passHref scroll={false}>
+            <Link mt="4" cursor="pointer" fontSize="18.5" fontWeight="extrabold" textDecoration="none" href='/' _hover={{ textDecoration: "none" }}>
+              OVERLORD
+            </Link>
+          </Nextlink>
           <div>
             {isLargerThan650 &&
               <p>
@@ -60,10 +62,10 @@ export default function Home() {
                   <MenuButton as={IconButton} icon={<FaGripLines />} size="sm" mt="3" ml="2" bg={isDark ? "blue.400" : "purple.300"}>
                   </MenuButton>
                   <MenuList>
-                    <MenuItem><Flex alignItems="center"><FaInfoCircle /><Link ml="2" justifyContent="center" href="/" alignItems="center" textDecoration="none">About</Link></Flex></MenuItem>
-                    <MenuItem><Flex alignItems="center"><FaCannabis /><Link ml="2" justifyContent="center" href="/" alignItems="center" textDecoration="none">Work</Link></Flex></MenuItem>
-                    <MenuItem><Flex alignItems="center"><FaTelegramPlane /><Link ml="2" href="/" alignItems="center" textDecoration="none">Post</Link></Flex></MenuItem>
-                    <MenuItem><Flex alignItems="center"><FaGithub /><Link ml="2" justifyContent="center" href="https://github.com/Overlord15/shironeko-homepage" textDecoration="none">View Source</Link></Flex></MenuItem>
+                    <MenuItem><Flex alignItems="center"><FaCannabis /><Nextlink href="../comp/work" passHref scroll={false}><Link ml="2" justifyContent="center" href="/" alignItems="center" textDecoration="none">My Works</Link></Nextlink></Flex></MenuItem>
+                    <MenuItem><Flex alignItems="center"><FaInfoCircle /><Link ml="2" justifyContent="center" href="/" alignItems="center" textDecoration="none">About Me</Link></Flex></MenuItem>
+                    <MenuItem><Flex alignItems="center"><FaTelegramPlane /><Link ml="2" href="/" alignItems="center" textDecoration="none">Post Section</Link></Flex></MenuItem>
+                    <MenuItem><Flex alignItems="center"><FaGithub /><Link ml="2" justifyContent="center" href="https://github.com/Overlord15/shironeko-homepage" textDecoration="none">View Source On Github</Link></Flex></MenuItem>
                   </MenuList>
                 </Menu>
               </p>}
