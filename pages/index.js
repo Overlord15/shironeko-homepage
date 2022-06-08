@@ -28,7 +28,7 @@ export default function Home() {
       <Head>
         <title>OVERLORD | HOMEPAGE</title>
         <link rel="apple-touch-icon" sizes="180x180" href="https://cdn-icons.flaticon.com/png/512/1135/premium/1135729.png?token=exp=1653665482~hmac=53bdc80273655cb686732d46e1786a52" />
-        <link rel="shortcut icon" href="https://cdn-icons.flaticon.com/png/512/1135/premium/1135729.png?token=exp=1653665482~hmac=53bdc80273655cb686732d46e1786a52" />
+        <link rel="shortcut icon" href="/" />
       </Head>
       <Box as="nav" position="fixed" zIndex={1} backdropFilter="auto" backdropBlur="8px" w="100%">
         <Flex w="100%" pl="7" pr="7" pb="3">
