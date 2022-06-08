@@ -26,15 +26,15 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>OVERLORD | HOMEPAGE</title>
-                <link rel="apple-touch-icon" sizes="180x180" href="https://cdn-icons.flaticon.com/png/512/1135/premium/1135729.png?token=exp=1653665482~hmac=53bdc80273655cb686732d46e1786a52" />
-                <link rel="shortcut icon" href="https://cdn-icons.flaticon.com/png/512/1135/premium/1135729.png?token=exp=1653665482~hmac=53bdc80273655cb686732d46e1786a52" />
+                <title>OVERLORD | WORKS</title>
+                <link rel="apple-touch-icon" sizes="180x180" href="/images/icon.png" />
+                <link rel="icon" href="/images/icon.png" />
             </Head>
             <Box as="nav" position="fixed" zIndex={1} backdropFilter="auto" backdropBlur="8px" w="100%">
                 <Flex w="100%" pl="7" pr="7" pb="3">
-                    <Link isRound='true' mt="3.5" pr="4" pt="1.5" fontSize="18px" transform="" href='/'><FaPaw /></Link>
+                    <Link isRound='true' mt="3.5" pr="4" pt="11.5px" fontSize="18px" transform="" href='/'><FaPaw /></Link>
                     <Nextlink href="/" passHref scroll={false}>
-                        <Link mt="4" cursor="pointer" fontSize="18.5" fontWeight="extrabold" textDecoration="none" href='/' _hover={{ textDecoration: "none" }}>
+                        <Link css={{}} mt="4" cursor="pointer" fontSize="18.5" p="5px" fontWeight="extrabold" textDecoration="none" href='/' _hover={{ textDecoration: "none" }}>
                             OVERLORD
                         </Link>
                     </Nextlink>
@@ -43,12 +43,12 @@ export default function Home() {
                             <p>
                                 <Flex>
                                     <Nextlink href="../comp/work" passHref scroll={false}>
-                                        <Link mt="4" size="sm" fontSize="lg" ml="7" _hover={{ color: "red.500", textDecoration: "underline", }}>Works</Link>
+                                        <Link mt="4" size="sm" fontSize="lg" ml="7" bgColor="teal.300" border="2px" borderColor="teal.300" color="black" borderRadius="2px" p="3px" _hover={{ color: "red.500", textDecoration: "underline", }}>Works</Link>
                                     </Nextlink>
-                                    <Box pt="21.5px" ml="6" mr="1"><AiFillMessage /></Box>
-                                    <Link href='/' mt="4" size="sm" fontSize="lg" ml="0" _hover={{ color: "green.500", textDecoration: "underline", }}>Post</Link>
-                                    <Box pt="21.5px" ml="6" mr="1"><VscGithub /></Box>
-                                    <Link href='https://github.com/Overlord15/shironeko-homepage' isExternal mt="4" size="sm" fontSize="lg" ml="1" _hover={{ color: "pink.500", textDecoration: "underline", }}>Source</Link>
+                                    <Box pt="24.5px" ml="6" mr="1"><AiFillMessage /></Box>
+                                    <Link href='/' mt="4" size="sm" fontSize="lg" p="3px" ml="0" _hover={{ color: "green.500", textDecoration: "underline", }}>Post</Link>
+                                    <Box pt="24.5px" ml="6" mr="1"><VscGithub /></Box>
+                                    <Link href='https://github.com/Overlord15/shironeko-homepage' p="3px" isExternal mt="4" size="sm" fontSize="lg" ml="1" _hover={{ color: "pink.500", textDecoration: "underline", }}>Source</Link>
                                 </Flex>
                             </p>
                         }
@@ -73,6 +73,55 @@ export default function Home() {
                 </Flex>
             </Box>
             <Container pt="100">
+
+                <Text pl="2" css={{ fontFamily: "heading", fontSize: 20, fontWeight: "bold", lineHeight: [1.33, null, 1.2], marginBottom: 4, marginTop: 3, textDecoration: "underline", textDecorationColor: "#525252", textDecorationThickness: 4, textUnderlineOffset: 6 }}>
+                    Works
+                </Text>
+
+                <Flex>
+                    <Box pt="10">
+                        <Image src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
+                    </Box>
+                    <Spacer></Spacer>
+                    <Box pt="10">
+                        <Image src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
+                    </Box>
+                </Flex>
+
+                <Flex>
+                    <Box pt="10">
+                        <Image src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
+                    </Box>
+                    <Spacer></Spacer>
+                    <Box pt="10">
+                        <Image src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
+                    </Box>
+                </Flex>
+
+                <Box pb="8" pt="8">
+                    <hr />
+                </Box>
+
+                <Text pb="5" pl="2" css={{ fontFamily: "heading", fontSize: 20, fontWeight: "bold", lineHeight: [1.33, null, 1.2], marginBottom: 4, marginTop: 3, textDecoration: "underline", textDecorationColor: "#525252", textDecorationThickness: 4, textUnderlineOffset: 6 }}>
+                    Collaborations
+                </Text>
+
+                <Flex>
+                    <Box pt="10">
+                        <Image src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
+                    </Box>
+                    <Spacer></Spacer>
+                    <Box pt="10">
+                        <Image src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
+                    </Box>
+                </Flex>
+
+
+
+
+
+
+
 
                 <Box maxW="100%" h="30px" pb="10" pt="8" ><Text textAlign="center" fontSize="15px" fontWeight="light">© 2022 Anupam Kumar. All Rights Reserved.</Text></Box>
             </Container>
