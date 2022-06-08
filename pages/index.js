@@ -86,7 +86,7 @@ export default function Home() {
                   </Heading>
                   <p>Digital Craftsman ( Artist / Developer / Designer )</p>
                 </Box>
-                <Image borderRadius='full' boxSize='100px' src='https://bit.ly/dan-abramov' alt='Anupam Kumar' ml="6" />
+                <Image borderRadius='full' boxSize='100px' src='/images/prof.jpg' alt='Anupam Kumar' ml="6" />
               </Flex>
             </p>
           }
@@ -101,7 +101,7 @@ export default function Home() {
                 <p>Digital Craftsman ( Artist / Developer / Designer )</p>
               </Box>
               <Center mt="6">
-                <Image borderRadius='full' boxSize='150px' src='https://i.pinimg.com/originals/f6/25/19/f6251928ce4061912bf0926e8c80a6f4.gif' objectFit="cover" alt='Anupam Kumar' />
+                <Image borderRadius='full' boxSize='150px' src='/images/prof.jpg' objectFit="cover" alt='Anupam Kumar' />
               </Center>
             </p>
           }
@@ -167,10 +167,10 @@ export default function Home() {
         <Box mb="10" mt="12">
           <Link textDecoration="none" href="https://github.com/Overlord15/overlord-homepage" isExternal maxW="70%">
             <Center>
-              <Image src='../images/github-source.jpg' alt='github source' objectFit='contain' border="none" borderRadius="10px" maxW="70%" />
+              <Image src='../images/icon.png' alt='github source' width="200px" objectFit='contain' border="none" borderRadius="10px" maxW="70%" />
             </Center>
           </Link>
-          <Center mt="3" mb=""><Text maxW="60%" textAlign="center" fontWeight="bold">Overlord - Homepage Web App</Text></Center>
+          <Center mt="5" mb=""><Text maxW="60%" textAlign="center" fontWeight="bold">Overlord - Homepage Web App</Text></Center>
           <Center mt="2"><Text textAlign="justify" maxW="60%" fontWeight="100">Visit my Github repositery which contains the source code for this site and feel free to contribute ! If you like my work feel free to give a star.</Text></Center>
         </Box>
         <Box maxW="100%" h="30px" pb="10" pt="8" ><Text textAlign="center" fontSize="15px" fontWeight="light">© 2022 Anupam Kumar. All Rights Reserved.</Text></Box>
