@@ -1,5 +1,5 @@
 import Head from 'next/head'
-// import { Link as Nextlink } from 'next/link'
+import styles from '../pages/Home.module.css'
 import Nextlink from 'next/link'
 import { Button, Text, Center, Box, Container, Flex, Heading, IconButton, Link, Spacer, useMediaQuery, Menu, MenuButton, MenuList, MenuItem, useColorModeValue, Image } from '@chakra-ui/react'
 import { useColorMode } from "@chakra-ui/color-mode";
@@ -31,7 +31,7 @@ export default function Home() {
         <link rel="apple-touch-icon" sizes="180x180" href="/images/icon.png" />
         <link rel="shortcut icon" href="/images/icon.png" />
       </Head>
-      <Box as="nav" position="fixed" zIndex={1} backdropFilter="auto" backdropBlur="8px" w="100%">
+      <Box className={styles.font} as="nav" position="fixed" zIndex={1} backdropFilter="auto" backdropBlur="8px" w="100%">
         <Flex w="100%" pl="7" pr="7" pb="3">
           <Link isRound='true' mt="3.5" pr="4" pt="11.5px" fontSize="18px" transform="" href='/'><FaPaw /></Link>
           <Nextlink href="/" passHref scroll={false}>
@@ -73,15 +73,15 @@ export default function Home() {
           </div>
         </Flex>
       </Box>
-      <Container pt="100">
-        <Box border="lg" mb="6" p="3" textAlign="center" borderRadius="8px" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.300')} css={{ backdropFilter: 'blur(10px)' }}>
+      <Container className={styles.font2} pt="100">
+        <Box className={styles.font} border="lg" mb="6" p="3" textAlign="center" borderRadius="8px" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.300')} css={{ backdropFilter: 'blur(10px)' }}>
           Hello, I&apos;m an indie web app developer based in India!
         </Box>
         <div>
           {isLargerThan650 &&
             <p>
               <Flex>
-                <Box pl="2">
+                <Box pl="2" className={styles.font}>
                   <Heading>
                     Anupam Kumar
                   </Heading>

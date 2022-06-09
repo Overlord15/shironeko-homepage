@@ -1,5 +1,5 @@
 import Head from 'next/head'
-// import { Link as Nextlink } from 'next/link'
+import styles from '../Home.module.css'
 import Nextlink from 'next/link'
 import { Button, Text, Center, Box, Container, Flex, Heading, IconButton, Link, Spacer, useMediaQuery, Menu, MenuButton, MenuList, MenuItem, useColorModeValue, Image } from '@chakra-ui/react'
 import { useColorMode } from "@chakra-ui/color-mode";
@@ -30,7 +30,7 @@ export default function Home() {
                 <link rel="apple-touch-icon" sizes="180x180" href="/images/icon.png" />
                 <link rel="icon" href="/images/icon.png" />
             </Head>
-            <Box as="nav" position="fixed" zIndex={1} backdropFilter="auto" backdropBlur="8px" w="100%">
+            <Box className={styles.font} as="nav" position="fixed" zIndex={1} backdropFilter="auto" backdropBlur="8px" w="100%">
                 <Flex w="100%" pl="7" pr="7" pb="3">
                     <Link isRound='true' mt="3.5" pr="4" pt="11.5px" fontSize="18px" transform="" href='/'><FaPaw /></Link>
                     <Nextlink href="/" passHref scroll={false}>
@@ -72,7 +72,7 @@ export default function Home() {
                     </div>
                 </Flex>
             </Box>
-            <Container pt="100">
+            <Container className={styles.font2} pt="100">
 
                 <Text pl="2" css={{ fontFamily: "heading", fontSize: 20, fontWeight: "bold", lineHeight: [1.33, null, 1.2], marginBottom: 4, marginTop: 3, textDecoration: "underline", textDecorationColor: "#525252", textDecorationThickness: 4, textUnderlineOffset: 6 }}>
                     Works
@@ -81,39 +81,32 @@ export default function Home() {
                 <Flex>
                     <Box pt="10">
                         <Image alt='image' src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
+                        <Text textAlign="center" pt="3">Coming soon...</Text>
                     </Box>
                     <Spacer></Spacer>
                     <Box pt="10">
                         <Image alt='image' src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
+                        <Text textAlign="center" pt="3">Coming soon...</Text>
                     </Box>
                 </Flex>
 
-                <Flex>
-                    <Box pt="10">
-                        <Image alt='image' src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
-                    </Box>
-                    <Spacer></Spacer>
-                    <Box pt="10">
-                        <Image alt='image' src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
-                    </Box>
-                </Flex>
-
-                <Box pb="8" pt="8">
+                <Box pb="8" pt="10" color="white">
                     <hr />
                 </Box>
 
-                <Text pb="5" pl="2" css={{ fontFamily: "heading", fontSize: 20, fontWeight: "bold", lineHeight: [1.33, null, 1.2], marginBottom: 4, marginTop: 3, textDecoration: "underline", textDecorationColor: "#525252", textDecorationThickness: 4, textUnderlineOffset: 6 }}>
+                <Text pl="2" css={{ fontFamily: "heading", fontSize: 20, fontWeight: "bold", lineHeight: [1.33, null, 1.2], marginBottom: 4, marginTop: 3, textDecoration: "underline", textDecorationColor: "#525252", textDecorationThickness: 4, textUnderlineOffset: 6 }}>
                     Collaborations
                 </Text>
 
-                <Flex>
+                <Flex pb="20" maxW="100%">
+                    <Box pt="10" mr="auto" ml="auto">
+                        <Image alt='image' src='/images/coming-soon.jpg' cursor="wait" width="225px" borderRadius="15px"></Image>
+                        <Text textAlign="center" pt="3">Coming soon...</Text>
+                    </Box>
+                    {/* <Spacer></Spacer>
                     <Box pt="10">
                         <Image alt='image' src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
-                    </Box>
-                    <Spacer></Spacer>
-                    <Box pt="10">
-                        <Image alt='image' src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
-                    </Box>
+                    </Box> */}
                 </Flex>
 
 
@@ -123,7 +116,7 @@ export default function Home() {
 
 
 
-                <Box maxW="100%" h="30px" pb="10" pt="8" ><Text textAlign="center" fontSize="15px" fontWeight="light">© 2022 Anupam Kumar. All Rights Reserved.</Text></Box>
+                <Box maxW="100%" h="30px" pb="10" pt="" ><Text textAlign="center" fontSize="15px" fontWeight="light">© 2022 Anupam Kumar. All Rights Reserved.</Text></Box>
             </Container>
         </>
     )
