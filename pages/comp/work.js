@@ -80,21 +80,21 @@ export default function Home() {
 
                 <Flex>
                     <Box pt="10">
-                        <Image src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
+                        <Image alt='image' src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
                     </Box>
                     <Spacer></Spacer>
                     <Box pt="10">
-                        <Image src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
+                        <Image alt='image' src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
                     </Box>
                 </Flex>
 
                 <Flex>
                     <Box pt="10">
-                        <Image src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
+                        <Image alt='image' src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
                     </Box>
                     <Spacer></Spacer>
                     <Box pt="10">
-                        <Image src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
+                        <Image alt='image' src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
                     </Box>
                 </Flex>
 
@@ -108,11 +108,11 @@ export default function Home() {
 
                 <Flex>
                     <Box pt="10">
-                        <Image src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
+                        <Image alt='image' src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
                     </Box>
                     <Spacer></Spacer>
                     <Box pt="10">
-                        <Image src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
+                        <Image alt='image' src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
                     </Box>
                 </Flex>
 
