@@ -26,7 +26,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>OVERLORD | WORKS</title>
+                <title>Works - Anupam Kumar</title>
                 <link rel="apple-touch-icon" sizes="180x180" href="/images/icon.png" />
                 <link rel="icon" href="/images/icon.png" />
             </Head>
@@ -43,12 +43,13 @@ export default function Home() {
                             <p>
                                 <Flex>
                                     <Nextlink href="../comp/work" passHref scroll={false}>
-                                        <Link mt="4" size="sm" fontSize="lg" ml="7" bgColor="teal.300" border="2px" borderColor="teal.300" color="black" borderRadius="2px" p="3px" _hover={{ color: "red.500", textDecoration: "underline", }}>Works</Link>
+                                        <Link p="1px" mt="18.5px" size="sm" fontSize="lg" ml="7" bgColor="teal.300" color="black" border="2px" borderRadius="3px" borderColor="transparent" _hover={{ color: "red.500", textDecoration: "underline", }}>Works</Link>
                                     </Nextlink>
-                                    <Box pt="24.5px" ml="6" mr="1"><AiFillMessage /></Box>
-                                    <Link href='/' mt="4" size="sm" fontSize="lg" p="3px" ml="0" _hover={{ color: "green.500", textDecoration: "underline", }}>Post</Link>
-                                    <Box pt="24.5px" ml="6" mr="1"><VscGithub /></Box>
-                                    <Link href='https://github.com/Overlord15/shironeko-homepage' p="3px" isExternal mt="4" size="sm" fontSize="lg" ml="1" _hover={{ color: "pink.500", textDecoration: "underline", }}>Source</Link>
+                                    <Nextlink href="../comp/post" passHref scroll={false}>
+                                        <Link p="1px" ml="5" href="../comp/work" mt="18.5px" size="sm" fontSize="lg" border="2px" borderColor="transparent" _hover={{ color: "green.500", textDecoration: "underline", }}>Post</Link>
+                                    </Nextlink>
+                                    <Box pt="26.5px" ml="5" mr=""><VscGithub /></Box>
+                                    <Link p="1px" ml="5px" href='https://github.com/Overlord15/shironeko-homepage' pt="5.5px" isExternal mt="4" size="sm" fontSize="lg" _hover={{ color: "pink.500", textDecoration: "underline", }}>Source</Link>
                                 </Flex>
                             </p>
                         }
@@ -62,10 +63,9 @@ export default function Home() {
                                     <MenuButton as={IconButton} icon={<FaGripLines />} size="sm" mt="3" ml="2" bg={isDark ? "blue.400" : "purple.300"}>
                                     </MenuButton>
                                     <MenuList>
-                                        <MenuItem><Flex alignItems="center"><FaInfoCircle /><Link ml="2" justifyContent="center" href="/" alignItems="center" textDecoration="none">About</Link></Flex></MenuItem>
-                                        <MenuItem><Flex alignItems="center"><FaCannabis /><Link ml="2" justifyContent="center" href="/" alignItems="center" textDecoration="none">Work</Link></Flex></MenuItem>
-                                        <MenuItem><Flex alignItems="center"><FaTelegramPlane /><Link ml="2" href="/" alignItems="center" textDecoration="none">Post</Link></Flex></MenuItem>
-                                        <MenuItem><Flex alignItems="center"><FaGithub /><Link ml="2" justifyContent="center" href="https://github.com/Overlord15/shironeko-homepage" textDecoration="none">View Source</Link></Flex></MenuItem>
+                                        <MenuItem><Flex alignItems="center"><FaCannabis /><Nextlink href="../comp/work" passHref scroll={false}><Link ml="2" justifyContent="center" href="/" alignItems="center" textDecoration="none">My Works</Link></Nextlink></Flex></MenuItem>
+                                        <MenuItem><Flex alignItems="center"><FaTelegramPlane /><Nextlink href="../comp/post" passHref scroll={false}><Link ml="2" href="../comp/post" alignItems="center" textDecoration="none">Popular Posts</Link></Nextlink></Flex></MenuItem>
+                                        <MenuItem><Flex alignItems="center"><FaGithub /><Link ml="2" justifyContent="center" href="https://github.com/Overlord15/shironeko-homepage" textDecoration="none">View Source On Github</Link></Flex></MenuItem>
                                     </MenuList>
                                 </Menu>
                             </p>}
@@ -82,14 +82,14 @@ export default function Home() {
                     {isLargerThan650 &&
                         <p>
                             <Flex>
-                                <Box pt="10">
-                                    <Image alt='image' src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
+                                <Link href='../works/shironeko' pt="10">
+                                    <Image alt='image' src='/workimages/shironeko.png' width="225px" borderRadius="15px"></Image>
                                     <Text textAlign="center" pt="3" width="225px" fontSize="20px">SHIRONEKO</Text>
                                     <Text textAlign="center" width="225px" fontSize="15px" pt="1">Portfolio web app built using Next.js , Chakra-UI, react-icons , framer-motion and react-dom</Text>
-                                </Box>
+                                </Link>
                                 <Spacer></Spacer>
                                 <Box pt="10">
-                                    <Image alt='image' src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
+                                    <Image alt='image' src='/workimages/watch-pro.png' width="225px" borderRadius="15px"></Image>
                                     <Text textAlign="center" pt="3" width="225px" fontSize="20px">WATCH PRO</Text>
                                     <Text textAlign="center" width="225px" pt="3">Digital Watch desktop app with fold animation and dark theme support</Text>
                                 </Box>
