@@ -34,10 +34,10 @@ export default function Home() {
                             <p>
                                 <Flex>
                                     <Nextlink href="../comp/work" passHref scroll={false}>
-                                        <Link p="1px" mt="18.5px" size="sm" fontSize="lg" ml="7" border="2px" borderColor="transparent" _hover={{ color: "red.500", textDecoration: "underline", }}>Works</Link>
+                                        <Link p="1px" pl="5px" pr="5px" mt="18.5px" size="sm" fontSize="lg" ml="7" border="2px" borderColor="transparent" _hover={{ color: "red.500", textDecoration: "underline", }}>Works</Link>
                                     </Nextlink>
                                     <Nextlink href="../comp/post" passHref scroll={false}>
-                                        <Link p="1px" ml="5" href="../comp/work" mt="18.5px" size="sm" fontSize="lg" bgColor="teal.300" borderRadius="3px" color="black" border="2px" borderColor="transparent" _hover={{ color: "green.500", textDecoration: "underline", }}>Post</Link>
+                                        <Link p="1px" pl="5px" pr="5px" ml="5" href="../comp/work" mt="18.5px" size="sm" fontSize="lg" bgColor="teal.300" borderRadius="3px" color="black" border="2px" borderColor="transparent" _hover={{ color: "green.500", textDecoration: "underline", }}>Post</Link>
                                     </Nextlink>
                                     <Box pt="26.5px" ml="5" mr=""><VscGithub /></Box>
                                     <Link p="1px" ml="5px" href='https://github.com/Overlord15/shironeko-homepage' pt="5.5px" isExternal mt="4" size="sm" fontSize="lg" _hover={{ color: "pink.500", textDecoration: "underline", }}>Source</Link>

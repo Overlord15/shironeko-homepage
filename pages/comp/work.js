@@ -43,10 +43,10 @@ export default function Home() {
                             <p>
                                 <Flex>
                                     <Nextlink href="../comp/work" passHref scroll={false}>
-                                        <Link p="1px" mt="18.5px" size="sm" fontSize="lg" ml="7" bgColor="teal.300" color="black" border="2px" borderRadius="3px" borderColor="transparent" _hover={{ color: "red.500", textDecoration: "underline", }}>Works</Link>
+                                        <Link p="1px" pl="5px" pr="5px" mt="18.5px" size="sm" fontSize="lg" ml="7" bgColor="teal.300" color="black" border="2px" borderRadius="3px" borderColor="transparent" _hover={{ color: "red.500", textDecoration: "underline", }}>Works</Link>
                                     </Nextlink>
                                     <Nextlink href="../comp/post" passHref scroll={false}>
-                                        <Link p="1px" ml="5" href="../comp/work" mt="18.5px" size="sm" fontSize="lg" border="2px" borderColor="transparent" _hover={{ color: "green.500", textDecoration: "underline", }}>Post</Link>
+                                        <Link p="1px" pl="5px" pr="5px" ml="5" href="../comp/work" mt="18.5px" size="sm" fontSize="lg" border="2px" borderColor="transparent" _hover={{ color: "green.500", textDecoration: "underline", }}>Post</Link>
                                     </Nextlink>
                                     <Box pt="26.5px" ml="5" mr=""><VscGithub /></Box>
                                     <Link p="1px" ml="5px" href='https://github.com/Overlord15/shironeko-homepage' pt="5.5px" isExternal mt="4" size="sm" fontSize="lg" _hover={{ color: "pink.500", textDecoration: "underline", }}>Source</Link>
@@ -78,7 +78,7 @@ export default function Home() {
             </Box>
             <Container pt="100">
                 <Section delay={0.1}>
-                    <Text pl="2" css={{ fontFamily: "heading", fontSize: 20, fontWeight: "bold", lineHeight: [1.33, null, 1.2], marginBottom: 4, marginTop: 3, textDecoration: "underline", textDecorationColor: "#525252", textDecorationThickness: 4, textUnderlineOffset: 6 }}>
+                    <Text pl="2" css={{ fontFamily: "heading", fontSize: 20, fontWeight: "bold", lineHeight: [1.33, null, 1.2], marginBottom: 4, marginTop: 3}}>
                         Works
                     </Text>
                 </Section>
@@ -88,17 +88,17 @@ export default function Home() {
                         <p>
                             <Section delay={0.3}>
                                 <Flex>
-                                    <Link href='../works/shironeko' pt="10">
+                                    <Link href='../works/shironeko' pt="5">
                                         <Image alt='image' src='/workimages/shironeko.png' width="225px" borderRadius="15px"></Image>
                                         <Text textAlign="center" pt="3" width="225px" fontSize="20px">SHIRONEKO</Text>
                                         <Text textAlign="center" width="225px" fontSize="15px" pt="1">Portfolio web app built using Next.js , Chakra-UI, react-icons , framer-motion and react-dom</Text>
                                     </Link>
                                     <Spacer></Spacer>
-                                    <Box pt="10">
+                                    <Link href='../works/shironeko' pt="5">
                                         <Image alt='image' src='/workimages/watch-pro.png' width="225px" borderRadius="15px"></Image>
-                                        <Text textAlign="center" pt="3" width="225px" fontSize="20px">WATCH PRO</Text>
-                                        <Text textAlign="center" width="225px" pt="3">Digital Watch desktop app with fold animation and dark theme support</Text>
-                                    </Box>
+                                        <Text textAlign="center" pt="3" width="225px" fontSize="20px">SHIRONEKO</Text>
+                                        <Text textAlign="center" width="225px" fontSize="15px" pt="1">Portfolio web app built using Next.js , Chakra-UI, react-icons , framer-motion and react-dom</Text>
+                                    </Link>
                                 </Flex>
                             </Section>
                         </p>
@@ -109,17 +109,17 @@ export default function Home() {
                         <p>
                             <Section delay={0.5}>
                                 <Flex flexDirection="column">
-                                    <Box pt="10">
+                                    <Link href="../works/shironeko" pt="10">
                                         <Image maxW="100%" ml="auto" mr="auto" alt='image' src='../workimages/shironeko.png' width="270px" borderRadius="15px"></Image>
                                         <Text textAlign="center" pt="3">SHIRONEKO</Text>
                                         <Text textAlign="center" pl="5" pr="5" pt="3">Portfolio web app built using Next.js , Chakra-UI, react-icons , framer-motion<br /> and react-dom</Text>
-                                    </Box>
+                                    </Link>
                                     <Spacer></Spacer>
-                                    <Box pt="10">
+                                    <Link href="../works/shironeko" pt="10">
                                         <Image maxW="100%" ml="auto" mr="auto" alt='image' src='/workimages/watch-pro.png' width="270px" borderRadius="15px"></Image>
                                         <Text textAlign="center" pt="3">WATCH PRO</Text>
                                         <Text textAlign="center" pl="2" pr="2" pt="3">Digital Watch desktop app with fold animation and dark theme support</Text>
-                                    </Box>
+                                    </Link>
                                 </Flex>
                             </Section>
                         </p>

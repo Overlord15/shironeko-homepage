@@ -2,9 +2,8 @@ import Head from 'next/head'
 import Nextlink from 'next/link'
 import { Button, Text, Center, Box, Container, Flex, Heading, IconButton, Link, Spacer, useMediaQuery, Menu, MenuButton, MenuList, MenuItem, useColorModeValue, Image } from '@chakra-ui/react'
 import { useColorMode } from "@chakra-ui/color-mode";
-import { FaPaw, FaSun, FaMoon, FaInfoCircle, FaTelegramPlane, FaCannabis, FaGithub, FaGripLines, FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa'
+import { FaPaw, FaSun, FaMoon, FaGithub, FaGripLines, FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa'
 import { VscGithub } from 'react-icons/vsc'
-import { AiFillMessage } from 'react-icons/ai'
 import styled from '@emotion/styled'
 import Section from '../pages/comp/section'
 
@@ -43,10 +42,10 @@ export default function Home() {
               <p>
                 <Flex>
                   <Nextlink href="../comp/work" passHref scroll={false}>
-                    <Link p="1px" mt="18.5px" size="sm" fontSize="lg" ml="7" border="2px" borderColor="transparent" _hover={{ color: "red.500", textDecoration: "underline", }}>Works</Link>
+                    <Link p="1px" pl="5px" pr="5px" mt="18.5px" size="sm" fontSize="lg" ml="7" border="2px" borderColor="transparent" _hover={{ color: "red.500", textDecoration: "underline", }}>Works</Link>
                   </Nextlink>
                   <Nextlink href="../comp/post" passHref scroll={false}>
-                    <Link p="1px" ml="5" href="../comp/work" mt="18.5px" size="sm" fontSize="lg" border="2px" borderColor="transparent" _hover={{ color: "green.500", textDecoration: "underline", }}>Post</Link>
+                    <Link p="1px" pl="5px" pr="5px" ml="5" href="../comp/work" mt="18.5px" size="sm" fontSize="lg" border="2px" borderColor="transparent" _hover={{ color: "green.500", textDecoration: "underline", }}>Post</Link>
                   </Nextlink>
                   <Box pt="26.5px" ml="5" mr=""><VscGithub /></Box>
                   <Link ml="6px" href='https://github.com/Overlord15/shironeko-homepage' pt="5.5px" isExternal mt="4" size="sm" fontSize="lg" _hover={{ color: "pink.500", textDecoration: "underline", }}>Source</Link>
