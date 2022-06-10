@@ -94,7 +94,7 @@ export default function Home() {
                                 <Section delay={0.5}>
                                     <Link pt="10" href='https://youtu.be/ME4QC-m6RXw' _hover={{ textDecoration: "none" }}>
                                         <Image alt='image' src='/postimages/insta-python.jpg' objectFit="cover" width="225px" borderRadius="15px"></Image>
-                                        <Text textAlign="center" width="225px" pt="3">Tutorial which shows how to install Python libraries</Text>
+                                        <Text textAlign="center" width="225px" pt="3">Tutorial which shows how to download instagram dp using Python libraries</Text>
                                     </Link>
                                 </Section>
                                 <Spacer></Spacer>
