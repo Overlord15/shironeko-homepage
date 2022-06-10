@@ -30,12 +30,12 @@ export default function Home() {
                 <link rel="apple-touch-icon" sizes="180x180" href="/images/icon.png" />
                 <link rel="icon" href="/images/icon.png" />
             </Head>
-            <Box className={styles.font} as="nav" position="fixed" zIndex={1} backdropFilter="auto" backdropBlur="8px" w="100%">
+            <Box as="nav" position="fixed" zIndex={1} backdropFilter="auto" backdropBlur="8px" w="100%">
                 <Flex w="100%" pl="7" pr="7" pb="3">
                     <Link isRound='true' mt="3.5" pr="4" pt="11.5px" fontSize="18px" transform="" href='/'><FaPaw /></Link>
                     <Nextlink href="/" passHref scroll={false}>
                         <Link css={{}} mt="4" cursor="pointer" fontSize="18.5" p="5px" fontWeight="extrabold" textDecoration="none" href='/' _hover={{ textDecoration: "none" }}>
-                            OVERLORD
+                            SHIRONEKO
                         </Link>
                     </Nextlink>
                     <div>
@@ -72,25 +72,52 @@ export default function Home() {
                     </div>
                 </Flex>
             </Box>
-            <Container className={styles.font2} pt="100">
+            <Container pt="100">
 
                 <Text pl="2" css={{ fontFamily: "heading", fontSize: 20, fontWeight: "bold", lineHeight: [1.33, null, 1.2], marginBottom: 4, marginTop: 3, textDecoration: "underline", textDecorationColor: "#525252", textDecorationThickness: 4, textUnderlineOffset: 6 }}>
                     Works
                 </Text>
 
-                <Flex>
-                    <Box pt="10">
-                        <Image alt='image' src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
-                        <Text textAlign="center" pt="3">Coming soon...</Text>
-                    </Box>
-                    <Spacer></Spacer>
-                    <Box pt="10">
-                        <Image alt='image' src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
-                        <Text textAlign="center" pt="3">Coming soon...</Text>
-                    </Box>
-                </Flex>
+                <div>
+                    {isLargerThan650 &&
+                        <p>
+                            <Flex>
+                                <Box pt="10">
+                                    <Image alt='image' src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
+                                    <Text textAlign="center" pt="3" width="225px" fontSize="20px">SHIRONEKO</Text>
+                                    <Text textAlign="center" width="225px" fontSize="15px" pt="1">Portfolio web app built using Next.js , Chakra-UI, react-icons , framer-motion and react-dom</Text>
+                                </Box>
+                                <Spacer></Spacer>
+                                <Box pt="10">
+                                    <Image alt='image' src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
+                                    <Text textAlign="center" pt="3" width="225px" fontSize="20px">WATCH PRO</Text>
+                                    <Text textAlign="center" width="225px" pt="3">Digital Watch desktop app with fold animation and dark theme support</Text>
+                                </Box>
+                            </Flex>
+                        </p>
+                    }
+                </div>
+                <div>
+                    {isLargerThan6502 &&
+                        <p>
+                            <Flex flexDirection="column">
+                                <Box pt="10">
+                                    <Image maxW="100%" ml="auto" mr="auto" alt='image' src='https://images5.alphacoders.com/123/1238816.jpg' width="270px" borderRadius="15px"></Image>
+                                    <Text textAlign="center" pt="3">SHIRONEKO</Text>
+                                    <Text textAlign="center" pl="5" pr="5" pt="3">Portfolio web app built using Next.js , Chakra-UI, react-icons , framer-motion<br /> and react-dom</Text>
+                                </Box>
+                                <Spacer></Spacer>
+                                <Box pt="10">
+                                    <Image maxW="100%" ml="auto" mr="auto" alt='image' src='https://images5.alphacoders.com/123/1238816.jpg' width="270px" borderRadius="15px"></Image>
+                                    <Text textAlign="center" pt="3">WATCH PRO</Text>
+                                    <Text textAlign="center" pl="2" pr="2" pt="3">Digital Watch desktop app with fold animation and dark theme support</Text>
+                                </Box>
+                            </Flex>
+                        </p>
+                    }
+                </div>
 
-                <Box pb="8" pt="10" color="white">
+                <Box pb="10" pt="10" color="white">
                     <hr />
                 </Box>
 
@@ -98,7 +125,7 @@ export default function Home() {
                     Collaborations
                 </Text>
 
-                <Flex pb="20" maxW="100%">
+                <Flex pb="10" maxW="100%">
                     <Box pt="10" mr="auto" ml="auto">
                         <Image alt='image' src='/images/coming-soon.jpg' cursor="wait" width="225px" borderRadius="15px"></Image>
                         <Text textAlign="center" pt="3">Coming soon...</Text>

@@ -31,12 +31,12 @@ export default function Home() {
         <link rel="apple-touch-icon" sizes="180x180" href="/images/icon.png" />
         <link rel="shortcut icon" href="/images/icon.png" />
       </Head>
-      <Box className={styles.font} as="nav" position="fixed" zIndex={1} backdropFilter="auto" backdropBlur="8px" w="100%">
+      <Box as="nav" position="fixed" zIndex={1} backdropFilter="auto" backdropBlur="8px" w="100%">
         <Flex w="100%" pl="7" pr="7" pb="3">
           <Link isRound='true' mt="3.5" pr="4" pt="11.5px" fontSize="18px" transform="" href='/'><FaPaw /></Link>
           <Nextlink href="/" passHref scroll={false}>
             <Link mt="4" cursor="pointer" fontSize="18.5" p="5px" fontWeight="extrabold" textDecoration="none" href='/' _hover={{ textDecoration: "none" }}>
-              OVERLORD
+              SHIRONEKO
             </Link>
           </Nextlink>
           <div>
@@ -44,7 +44,7 @@ export default function Home() {
               <p>
                 <Flex>
                   <Nextlink href="../comp/work" passHref scroll={false}>
-                    <Link mt="4" size="sm" fontSize="lg" ml="7" border="2px" borderColor="#1A202C" p="3px" _hover={{ color: "red.500", textDecoration: "underline", }}>Works</Link>
+                    <Link mt="4" size="sm" fontSize="lg" ml="7" border="2px" borderColor="transparent" p="3px" _hover={{ color: "red.500", textDecoration: "underline", }}>Works</Link>
                   </Nextlink>
                   <Box pt="24.5px" ml="6" mr="1"><AiFillMessage /></Box>
                   <Link href='/' mt="4" size="sm" fontSize="lg" p="3px" ml="0" _hover={{ color: "green.500", textDecoration: "underline", }}>Post</Link>
@@ -73,9 +73,9 @@ export default function Home() {
           </div>
         </Flex>
       </Box>
-      <Container className={styles.font2} pt="100">
-        <Box className={styles.font} border="lg" mb="6" p="3" textAlign="center" borderRadius="8px" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.300')} css={{ backdropFilter: 'blur(10px)' }}>
-          Hello, I&apos;m an indie web app developer based in India!
+      <Container pt="100">
+        <Box border="lg" mb="6" p="3" textAlign="center" borderRadius="8px" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.300')} css={{ backdropFilter: 'blur(10px)' }}>
+          Hello, I&apos;m an indie web app developer based in India !
         </Box>
         <div>
           {isLargerThan650 &&
@@ -171,7 +171,7 @@ export default function Home() {
               <Image src='../images/icon.png' alt='github source' width="200px" objectFit='contain' border="none" borderRadius="10px" maxW="70%" />
             </Center>
           </Link>
-          <Center mt="5" mb=""><Text maxW="60%" textAlign="center" fontWeight="bold">Overlord - Homepage Web App</Text></Center>
+          <Center mt="5" mb=""><Text maxW="60%" textAlign="center" fontWeight="bold">SHIRONEKO Web App</Text></Center>
           <Center mt="2"><Text textAlign="justify" maxW="60%" fontWeight="100">Visit my Github repositery which contains the source code for this site and feel free to contribute ! If you like my work feel free to give a star.</Text></Center>
         </Box>
         <Box maxW="100%" h="30px" pb="10" pt="8" ><Text textAlign="center" fontSize="15px" fontWeight="light">© 2022 Anupam Kumar. All Rights Reserved.</Text></Box>
