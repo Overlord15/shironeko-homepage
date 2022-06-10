@@ -26,7 +26,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Shironeko - Anupam Kumar</title>
+                <title>DigiPro - Anupam Kumar</title>
                 <link rel="apple-touch-icon" sizes="180x180" href="/images/icon.png" />
                 <link rel="shortcut icon" href="/images/icon.png" />
             </Head>

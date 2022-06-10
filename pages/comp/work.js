@@ -48,8 +48,8 @@ export default function Home() {
                                     <Nextlink href="../comp/post" passHref scroll={false}>
                                         <Link p="1px" pl="5px" pr="5px" ml="5" href="../comp/work" mt="18.5px" size="sm" fontSize="lg" border="2px" borderColor="transparent" _hover={{ color: "green.500", textDecoration: "underline", }}>Post</Link>
                                     </Nextlink>
-                                    <Box pt="26.5px" ml="5" mr=""><VscGithub /></Box>
-                                    <Link p="1px" ml="5px" href='https://github.com/Overlord15/shironeko-homepage' pt="5.5px" isExternal mt="4" size="sm" fontSize="lg" _hover={{ color: "pink.500", textDecoration: "underline", }}>Source</Link>
+                                    <Box pt="27.5px" ml="5" mr=""><VscGithub /></Box>
+                                    <Link p="1px" ml="5px" href='https://github.com/Overlord15/shironeko-homepage' pt="6.5px" isExternal mt="4" size="sm" fontSize="lg" _hover={{ color: "pink.500", textDecoration: "underline", }}>Source</Link>
                                 </Flex>
                             </p>
                         }
@@ -78,7 +78,7 @@ export default function Home() {
             </Box>
             <Container pt="100">
                 <Section delay={0.1}>
-                    <Text pl="2" css={{ fontFamily: "heading", fontSize: 20, fontWeight: "bold", lineHeight: [1.33, null, 1.2], marginBottom: 4, marginTop: 3}}>
+                    <Text pl="2" css={{ fontFamily: "heading", fontSize: 20, fontWeight: "bold", lineHeight: [1.33, null, 1.2], marginBottom: 4, marginTop: 3 }}>
                         Works
                     </Text>
                 </Section>
@@ -88,17 +88,21 @@ export default function Home() {
                         <p>
                             <Section delay={0.3}>
                                 <Flex>
-                                    <Link href='../works/shironeko' pt="5">
-                                        <Image alt='image' src='/workimages/shironeko.png' width="225px" borderRadius="15px"></Image>
-                                        <Text textAlign="center" pt="3" width="225px" fontSize="20px">SHIRONEKO</Text>
-                                        <Text textAlign="center" width="225px" fontSize="15px" pt="1">Portfolio web app built using Next.js , Chakra-UI, react-icons , framer-motion and react-dom</Text>
-                                    </Link>
+                                    <Nextlink href="../works/shironeko" passHref>
+                                        <Link href='../works/shironeko' _hover={{ textDecoration: 'none' }}>
+                                            <Image alt='image' src='/workimages/shironeko.png' width="225px" borderRadius="15px"></Image>
+                                            <Text textAlign="center" pt="3" width="225px" fontSize="20px">SHIRONEKO</Text>
+                                            <Text textAlign="center" width="225px" fontSize="15px" pt="1">Portfolio web app built using Next.js , Chakra-UI, react-icons , framer-motion and react-dom</Text>
+                                        </Link>
+                                    </Nextlink>
                                     <Spacer></Spacer>
-                                    <Link href='../works/shironeko' pt="5">
-                                        <Image alt='image' src='/workimages/watch-pro.png' width="225px" borderRadius="15px"></Image>
-                                        <Text textAlign="center" pt="3" width="225px" fontSize="20px">SHIRONEKO</Text>
-                                        <Text textAlign="center" width="225px" fontSize="15px" pt="1">Portfolio web app built using Next.js , Chakra-UI, react-icons , framer-motion and react-dom</Text>
-                                    </Link>
+                                    <Nextlink href="../works/shironeko" passHref>
+                                        <Link href='../works/shironeko' _hover={{ textDecoration: 'none' }}>
+                                            <Image alt='image' src='/workimages/watch-pro.png' width="225px" borderRadius="15px"></Image>
+                                            <Text textAlign="center" pt="3" width="225px" fontSize="20px">DIGIPRO</Text>
+                                            <Text textAlign="center" width="225px" fontSize="15px" pt="1">Digital Desktop clock app with shutter animation and dark theme support</Text>
+                                        </Link>
+                                    </Nextlink>
                                 </Flex>
                             </Section>
                         </p>
@@ -117,8 +121,8 @@ export default function Home() {
                                     <Spacer></Spacer>
                                     <Link href="../works/shironeko" pt="10">
                                         <Image maxW="100%" ml="auto" mr="auto" alt='image' src='/workimages/watch-pro.png' width="270px" borderRadius="15px"></Image>
-                                        <Text textAlign="center" pt="3">WATCH PRO</Text>
-                                        <Text textAlign="center" pl="2" pr="2" pt="3">Digital Watch desktop app with fold animation and dark theme support</Text>
+                                        <Text textAlign="center" pt="3">DIGIPRO</Text>
+                                        <Text textAlign="center" pl="2" pr="2" pt="3">Digital Desktop clock app with shutter animation and dark theme support</Text>
                                     </Link>
                                 </Flex>
                             </Section>
@@ -126,21 +130,24 @@ export default function Home() {
                     }
                 </div>
                 <Section delay={0.6}>
-                    <Box pb="10" pt="10" color="white">
+                    <Box pb="4" pt="4" color="white">
                         <hr />
                     </Box>
                 </Section>
                 <Section delay={0.8}>
-                    <Text pl="2" css={{ fontFamily: "heading", fontSize: 20, fontWeight: "bold", lineHeight: [1.33, null, 1.2], marginBottom: 4, marginTop: 3, textDecoration: "underline", textDecorationColor: "#525252", textDecorationThickness: 4, textUnderlineOffset: 6 }}>
+                    <Text pl="2" css={{ fontFamily: "heading", fontSize: 20, fontWeight: "bold", lineHeight: [1.33, null, 1.2], marginBottom: 4, marginTop: 3 }}>
                         Collaborations
                     </Text>
                 </Section>
                 <Section delay={1.1}>
                     <Flex pb="10" maxW="100%">
-                        <Box pt="10" mr="auto" ml="auto">
-                            <Image alt='image' src='/images/coming-soon.jpg' cursor="wait" width="225px" borderRadius="15px"></Image>
-                            <Text textAlign="center" pt="3">Coming soon...</Text>
-                        </Box>
+                        <Nextlink href="#" passHref>
+                            <Link href='#' _hover={{ textDecoration: 'none' }} ml="auto" mr="auto">
+                                <Image alt='image' src='/images/coming-soon.jpg' width="225px" borderRadius="15px"></Image>
+                                <Text textAlign="center" pt="3" width="225px" fontSize="20px">Collab</Text>
+                                <Text textAlign="center" width="225px" fontSize="15px" pt="1">Coming soon..</Text>
+                            </Link>
+                        </Nextlink>
                         {/* <Spacer></Spacer>
                     <Box pt="10">
                         <Image alt='image' src='https://images5.alphacoders.com/123/1238816.jpg' width="225px" borderRadius="15px"></Image>
