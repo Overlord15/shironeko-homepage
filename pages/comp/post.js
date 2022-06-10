@@ -54,9 +54,13 @@ export default function Home() {
                                     <MenuButton as={IconButton} icon={<FaGripLines />} size="sm" mt="3" ml="2" bg={isDark ? "blue.400" : "purple.300"}>
                                     </MenuButton>
                                     <MenuList>
-                                        <MenuItem><Flex alignItems="center"><FaCannabis /><Nextlink href="../comp/work" passHref scroll={false}><Link ml="2" justifyContent="center" href="/" alignItems="center" textDecoration="none">My Works</Link></Nextlink></Flex></MenuItem>
-                                        <MenuItem><Flex alignItems="center"><FaTelegramPlane /><Nextlink href="../comp/post" passHref scroll={false}><Link ml="2" href="../comp/post" alignItems="center" textDecoration="none">Popular Posts</Link></Nextlink></Flex></MenuItem>
-                                        <MenuItem><Flex alignItems="center"><FaGithub /><Link ml="2" justifyContent="center" href="https://github.com/Overlord15/shironeko-homepage" textDecoration="none">View Source On Github</Link></Flex></MenuItem>
+                                        <Nextlink href="../comp/work" passHref>
+                                            <MenuItem as='Link'>My Works</MenuItem>
+                                        </Nextlink>
+                                        <Nextlink href="../comp/post" passHref>
+                                            <MenuItem as='Link'>Post</MenuItem>
+                                        </Nextlink>
+                                        <MenuItem as='Link'><Link justifyContent="center" isExternal href="https://github.com/Overlord15/shironeko-homepage" textDecoration="none">View Source On Github</Link></MenuItem>
                                     </MenuList>
                                 </Menu>
                             </p>}
@@ -137,7 +141,7 @@ export default function Home() {
 
                                     <Link pt="10" href='https://youtu.be/ME4QC-m6RXw' _hover={{ textDecoration: "none" }} m="auto">
                                         <Image alt='image' src='/postimages/insta-python.jpg' objectFit="cover" width="225px" borderRadius="15px"></Image>
-                                        <Text textAlign="center" width="225px" pt="3">Tutorial which shows how to install Python libraries</Text>
+                                        <Text textAlign="center" width="225px" pt="3">Tutorial which shows how to download instagram dp using Python libraries</Text>
                                     </Link>
 
                                     <Spacer></Spacer>

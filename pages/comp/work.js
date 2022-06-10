@@ -35,7 +35,7 @@ export default function Home() {
                     <Link isRound='true' mt="3.5" pr="4" pt="11.5px" fontSize="18px" transform="" href='/'><FaPaw /></Link>
                     <Nextlink href="/" passHref scroll={false}>
                         <Link css={{}} mt="4" cursor="pointer" fontSize="18.5" p="5px" fontWeight="extrabold" textDecoration="none" href='/' _hover={{ textDecoration: "none" }}>
-                        Anupam Kumar
+                            Anupam Kumar
                         </Link>
                     </Nextlink>
                     <div>
@@ -63,9 +63,13 @@ export default function Home() {
                                     <MenuButton as={IconButton} icon={<FaGripLines />} size="sm" mt="3" ml="2" bg={isDark ? "blue.400" : "purple.300"}>
                                     </MenuButton>
                                     <MenuList>
-                                        <MenuItem><Flex alignItems="center"><FaCannabis /><Nextlink href="../comp/work" passHref scroll={false}><Link ml="2" justifyContent="center" href="/" alignItems="center" textDecoration="none">My Works</Link></Nextlink></Flex></MenuItem>
-                                        <MenuItem><Flex alignItems="center"><FaTelegramPlane /><Nextlink href="../comp/post" passHref scroll={false}><Link ml="2" href="../comp/post" alignItems="center" textDecoration="none">Popular Posts</Link></Nextlink></Flex></MenuItem>
-                                        <MenuItem><Flex alignItems="center"><FaGithub /><Link ml="2" justifyContent="center" href="https://github.com/Overlord15/shironeko-homepage" textDecoration="none">View Source On Github</Link></Flex></MenuItem>
+                                        <Nextlink href="../comp/work" passHref>
+                                            <MenuItem as='Link'>My Works</MenuItem>
+                                        </Nextlink>
+                                        <Nextlink href="../comp/post" passHref>
+                                            <MenuItem as='Link'>Post</MenuItem>
+                                        </Nextlink>
+                                        <MenuItem as='Link'><Link justifyContent="center" isExternal href="https://github.com/Overlord15/shironeko-homepage" textDecoration="none">View Source On Github</Link></MenuItem>
                                     </MenuList>
                                 </Menu>
                             </p>}
