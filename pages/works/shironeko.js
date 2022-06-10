@@ -35,7 +35,7 @@ export default function Home() {
                     <Link isRound='true' mt="3.5" pr="4" pt="11.5px" fontSize="18px" transform="" href='/'><FaPaw /></Link>
                     <Nextlink href="/" passHref scroll={false}>
                         <Link mt="4" cursor="pointer" fontSize="18.5" p="5px" fontWeight="extrabold" textDecoration="none" href='/' _hover={{ textDecoration: "none" }}>
-                            SHIRONEKO
+                            Anupam Kumar
                         </Link>
                     </Nextlink>
                     <div>
