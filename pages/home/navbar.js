@@ -21,9 +21,10 @@ export default function Navbar() {
             </Head>
             <Box as="nav" position="fixed" zIndex={1} backdropFilter="auto" backdropBlur="8px" w="100%">
                 <Flex w="100%" pl="7" pr="7" pb="3">
-                    <Link isRound='true' mt="1.5" pr="4" pt="11.5px" fontSize="18px" transform="" href='/'><FaPaw /></Link>
+                    
                     <Nextlink href="/" passHref scroll={false}>
-                        <Link as="button" mt="2" cursor="pointer" fontSize="18.5" p="5px" fontWeight="extrabold" textDecoration="none" href='/' _hover={{ textDecoration: "none" }}>
+                        <Link display="flex" as="button" mt="2" cursor="pointer" fontSize="18.5" p="5px" fontWeight="extrabold" textDecoration="none" href='/' _hover={{ textDecoration: "none" }}>
+                        <Box isRound='true' mt="0px" pr="1" pt="1" fontSize="18px" transform="rotate(-20deg)" _hover={{transform: "rotate(0deg)"}} ><FaPaw /></Box>
                             Anupam Kumar
                         </Link>
                     </Nextlink>

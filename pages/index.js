@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import Nextlink from 'next/link'
-import { Button, Text, Center, Box, Container, Flex, Heading, IconButton, Link, Spacer, useMediaQuery, Menu, MenuButton, MenuList, MenuItem, useColorModeValue, Image } from '@chakra-ui/react'
+import { Button, Text, Center, Box, Container, Flex, Heading, Icon, Link, Spacer, useMediaQuery, Menu, MenuButton, MenuList, MenuItem, useColorModeValue, Image } from '@chakra-ui/react'
 import { useColorMode } from "@chakra-ui/color-mode";
 import { FaPaw, FaSun, FaMoon, FaGithub, FaGripLines, FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa'
-import { VscGithub } from 'react-icons/vsc'
 import styled from '@emotion/styled'
 import Section from './home/section'
 import Navbar from './home/navbar'
@@ -141,12 +140,12 @@ export default function Home() {
               </Center>
             </Link>
             <Center mt="5" mb=""><Text maxW="60%" textAlign="center" fontWeight="bold">SHIRONEKO Web App</Text></Center>
-            <Center mt="2"><Text textAlign="justify" maxW="60%" fontSize="20px" fontWeight="bold" >Visit my Github repositery which contains the source code for this site and feel free to contribute ! If you like my work feel free to give a star.</Text></Center>
+            <Center mt="2"><Text textAlign="justify" maxW="60%" fontWeight="semibold" >Visit my Github repositery which contains the source code for this site and feel free to contribute ! If you like my work feel free to give a star.</Text></Center>
           </Box>
           <Center>
             <Button mt="7" bg={isDark ? "teal.300" : "purple.300"} color={isDark ? "black" : "white"} >
               <Nextlink href="../comp/work">
-                <Link textAlign="center" textDecoration="none" _hover={{ textDecoration: "none", }}>Popular Posts</Link>
+                <Link textAlign="center" textDecoration="none" _hover={{ textDecoration: "none", }}>Popular Posts &rarr;</Link>
               </Nextlink>
             </Button>
           </Center>

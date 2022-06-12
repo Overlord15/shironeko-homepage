@@ -1,4 +1,3 @@
-import React from 'react'
 import { ChakraProvider } from '@chakra-ui/react'
 import Font from '../pages/home/font'
 import { extendTheme } from '@chakra-ui/react'
@@ -24,12 +23,12 @@ function MyApp({ Component, pageProps }) {
 
 
   return (
-    <React.StrictMode>
-      <ChakraProvider theme={theme}>
-        <Font />
-        <Component {...pageProps} />
-      </ChakraProvider>
-    </React.StrictMode>
+
+    <ChakraProvider theme={theme}>
+      <Font />
+      <Component {...pageProps} />
+    </ChakraProvider>
+
   )
 }
 
