@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Box, useMediaQuery } from '@chakra-ui/react'
 import { useColorMode } from "@chakra-ui/color-mode";
-import Navbar from '../comp/navbar'
+import Navbar from '../home/navbar'
 import styled from '@emotion/styled'
 
 export const BioSection = styled(Box)`
