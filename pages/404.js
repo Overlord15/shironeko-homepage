@@ -1,4 +1,4 @@
-import { Box, Center, Flex, Spinner, HStack, VStack, Text, Button } from '@chakra-ui/react'
+import { Box, Center, Flex, Spinner, HStack, VStack, Text, Link } from '@chakra-ui/react'
 import Head from 'next/head'
 import Navbar from '../pages//home/navbar'
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
             <Navbar />
 
             <Center>
-                <HStack mt="35vh" mb="auto" maxH="100%" maxW="100%" justifyContent="center" alignItems="center">
+                <HStack mt="40vh" mb="auto" maxH="100%" maxW="100%" justifyContent="center" alignItems="center">
                     <Box pt="2" size="xl" ><Text fontSize="50px">4</Text></Box>
                     <Spinner
                         thickness='4px'
@@ -27,7 +27,7 @@ export default function Home() {
                     <Text fontSize="40px" bgGradient='linear(to-l, #7928CA, #FF0080)' bgClip='text' pt="10px">PAGE NOT FOUND !</Text>
                 </HStack>
             </Center>
-            <Center pt="10"><Button as='Link' bgColor="teal.300" href="/">Go To Home &rarr;</Button></Center>
+            
         </>
     )
 }
