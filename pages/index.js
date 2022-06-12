@@ -78,7 +78,7 @@ export default function Home() {
           </Text>
           <Center>
             <Button mt="7" bg={isDark ? "teal.300" : "purple.300"} color={isDark ? "black" : "white"} >
-              <Nextlink href="../comp/work">
+              <Nextlink href="../home/work">
                 <Link textAlign="center" textDecoration="none" _hover={{ textDecoration: "none", }}>My Portfolio</Link>
               </Nextlink>
             </Button>
