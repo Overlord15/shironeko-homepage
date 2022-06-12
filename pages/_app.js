@@ -1,6 +1,6 @@
 import { ChakraProvider } from '@chakra-ui/react'
-import theme from '../pages/comp/theme'
-import Font from '../pages/comp/font'
+import theme from '../pages/home/theme'
+import Font from '../pages/home/font'
 
 function MyApp({ Component, pageProps }) {
   return (
