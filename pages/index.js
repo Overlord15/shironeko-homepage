@@ -117,7 +117,7 @@ export default function Home() {
             </Text>
           </Flex>
           <Text pl="2" mt="3">
-            &nbsp;&nbsp;&nbsp;Art, Music, Drawing, Playing RPG Games,{' '}<Link textDecoration="none" color="pink.300" _hover={{ textDecoration: "underline", color: "pink.300", textUnderlineOffset: 3 }}>Photography</Link>,  Learning Javascript framework, Machine.
+            &nbsp;&nbsp;&nbsp;Art, Music, Drawing, Playing RPG Games,{' '}<Link textDecoration="none" color="pink.300" _hover={{ textDecoration: "underline", color: "pink.300", textUnderlineOffset: 3 }}>Photography</Link>,  Learning Javascript , Machine.
           </Text>
         </Section>
         <Section delay={0.9}>
@@ -135,13 +135,13 @@ export default function Home() {
         </Section>
         <Section delay={1.1}>
           <Box mb="10" mt="12">
-            <Link textDecoration="none" href="https://github.com/Overlord15/overlord-homepage" isExternal maxW="70%">
+            <Link textDecoration="none" href="https://github.com/Overlord15/shironeko-homepage" isExternal maxW="70%">
               <Center>
                 <Image src='../workimages/shironeko.png' alt='github source' width="200px" objectFit='contain' border="none" borderRadius="10px" maxW="70%" />
               </Center>
             </Link>
             <Center mt="5" mb=""><Text maxW="60%" textAlign="center" fontWeight="bold">SHIRONEKO Web App</Text></Center>
-            <Center mt="2"><Text textAlign="justify" maxW="60%" fontWeight="100">Visit my Github repositery which contains the source code for this site and feel free to contribute ! If you like my work feel free to give a star.</Text></Center>
+            <Center mt="2"><Text textAlign="justify" maxW="60%" fontSize="20px" fontWeight="bold" >Visit my Github repositery which contains the source code for this site and feel free to contribute ! If you like my work feel free to give a star.</Text></Center>
           </Box>
           <Center>
             <Button mt="7" bg={isDark ? "teal.300" : "purple.300"} color={isDark ? "black" : "white"} >
